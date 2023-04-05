@@ -1,5 +1,4 @@
 
-using WebApplication1.Controllers;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -28,8 +27,5 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();
-
-DatabaseConnection connection = new DatabaseConnection();
-connection.connect();
 
 

@@ -1,8 +1,15 @@
-﻿@{
+﻿@using WebApplication1.Controllers;
+@{
     ViewData["Title"] = "Home Page";
+}
+@{    
+    DatabaseConnection con = new DatabaseConnection("hejehj");
+    con.connect();
 }
 
 <div class="text-center">
     <h1 class="display-4">BookSwap</h1>
     <p>Välkommen till vår jättefina <a href="https://docs.microsoft.com/aspnet/core">webbsida!</a>.</p>
+    <p>@(con.getSomeText())</p>
 </div>
+
