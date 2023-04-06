@@ -6,7 +6,7 @@ namespace WebApplication1.Controllers
     {
         private String str = "Starttext";
         public String someText = "Text här";
-        private String connectionString = "Server=127.0.0.1;Port=5432;User Id=an4283;Password=jmws6km4;Database=an4283;"; //jdbc:postgresql://pgserver.mau.se:5432/an4283
+        private String connectionString = "Server=glsdkj;Port=5432;User Id=an4283;Password=jmws6km4;Database=an4283;"; //jdbc:postgresql://pgserver.mau.se:5432/an4283
         public  async void connect() {
             try
             {
